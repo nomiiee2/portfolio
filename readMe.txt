@@ -7,7 +7,7 @@
 - 디자인, 구현
 - 메인페이지 & 서브페이지1~2
 - 202305 ~  <작업기간>
-- figma, photoshop, illustrator, 웹에디터(VSC) (사용프로그램)
+- figma, photoshop, illustrator, 웹에디터(VSC) <사용프로그램>
 
 3. 프로젝트3 - 인물형웹디자인 <적응형 웹데스트탑용으로 제작>
 - 디자인, 구현
