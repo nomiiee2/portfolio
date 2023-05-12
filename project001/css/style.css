@@ -16,68 +16,73 @@ img {border: none;
 body {font-family: 'Nanum Gothic', sans-serif;
     font-size: 14px;}
 
+h1 {font-weight: bold;
+    font-size: 48px;}
 
-.boxA {position: relative;}
-.box1 {position: absolute;}
-.box2 {position: absolute;
-    width: 160px;
-    height: 100vh;
-    right: 0;
-    top: 0;}
-.box3 {width: 100%;
-    height: 100vh;
-    
+
+.boxA {position: relative;
+    width: 100%;
+    height: 100vh;}
+
+.box1 {position: absolute;
     }
-.box4 {position: absolute;
+.box2 {position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 160px;
 
-    right: 170px;
-    top: 10px;}
+    z-index: 1;}
+.box3 {width: 100%;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    }
+
+.box4 {position: absolute;
+    right: 180px;
+    top: 10px;
+    }
 
 .box5 {display: flex;
-    justify-content: space-around;}
-.box5>div {width: 32%;}
-
-.box6 {display: flex;}
-
-.box7 {}
-.box7-1 {}
-.box7-2 {}
-.box7-3 {}
-
-.tab ul {display: flex;
-    justify-content: space-around;
-    }
-.tab ul li {
-    padding: 8px 15px;
-    background-color: aqua;
-}
+    width: 100%;
+    justify-content: space-between;}
+.box5-1, .box5-2, .box5-3 {width: 32%;}
 
 
-/* 미디어쿼리구간 설정 /////////////////////////////////////////////////////////////////////////////////// */
+.box6 {position: relative;
+    width: 100%;
+    height: 890px;}
 
+.box6-1 {position: absolute;
+    right: -80px;}
 
-/* 768px이상 구간 설정 /////////////////////////////////////////////////////////////// */
-
-@media (min-width:768px){
+.box6-2 {position: absolute;
     
+    left: 0;
+    top: 20%}
+
+.box6-3 {position: absolute;
+    right: 0;
+    top: 20%;}
+
+.box7 {position: relative;}
+.card_bg {position: absolute;
+    left: 0;
+    top: 10px;
+    z-index: -999;}
+
+
+.box8 {}
+.box8-2 ul {display: flex;}
+
+
+
+
+
+
+
+
+
+
+
     
-
-}   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
