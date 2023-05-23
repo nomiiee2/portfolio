@@ -1,0 +1,115 @@
+@charset 'utf-8';
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+
+/* 전체설정 */
+
+* {margin: 0;
+    padding: 0;}
+
+ul,ol {list-style: none;}
+a {text-decoration: none;
+    color: #000;}
+img {border: none;
+    vertical-align: bottom;}
+
+body {font-family: 'Nanum Gothic', sans-serif;
+    font-size: 14px;}
+
+h1 {font-weight: bold;
+    font-size: 48px;}
+
+
+.boxA {position: relative;
+    width: 100%;}
+
+.box1 {position: absolute;
+    }
+.box2 {position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 160px;
+
+    z-index: 1;}
+.box3 {width: 100%;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    }
+
+.box4 {position: absolute;
+    right: 180px;
+    top: 10px;
+    }
+
+.box5 {display: flex;
+    width: 100%;
+    justify-content: space-between;}
+.box5-1, .box5-2, .box5-3 {width: 32%;}
+
+
+.box6 {position: relative;
+    width: 100%;
+    height: 890px;}
+
+.box6-1 {position: absolute;
+    right: -80px;}
+
+.box6-2 {position: absolute;
+    
+    left: 0;
+    top: 20%}
+
+.box6-3 {position: absolute;
+    right: 0;
+    top: 20%;}
+
+.box7 {position: relative;}
+.card_bg {position: absolute;
+    left: 0;
+    top: 10px;
+    z-index: -999;}
+
+
+.box8 {}
+.box8-2 ul {display: flex;}
+
+
+/*  */
+
+
+
+.logo {background-image: url(../img/logo.png);
+    height: 116px;
+    width: 277px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+    }
+
+.gnb {}
+.gnb ul {}
+.gnb ul li {}
+
+
+.hero {width: 100%;
+    }
+    
+
+.time {background-color: #7A6BC6;
+    width: ;
+    color: #fff;
+    }
+
+
+
+/* 미디어쿼리구간 */
+
+
+
+
+/* @media (min-width:1440px) {
+    
+    .boxA, .boxB{width: 1400px;
+        margin: 0 auto;}
+} */
