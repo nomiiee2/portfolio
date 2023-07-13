@@ -67,7 +67,14 @@ header {width: 100%;
     background-position: center center;
     position: relative;
     }
-        
+    
+    
+
+
+
+
+
+
 section {width: 90%;}
 
 /* 로고 */
@@ -109,6 +116,11 @@ section {width: 90%;}
 .slogun span {background-color: rgba(45, 129, 24, 0.8);
     padding: 5px 10px;}
 
+
+
+
+
+
 /* 서치바 form태그! */
 .search {position: absolute;
     right: 12%;
@@ -121,6 +133,22 @@ section {width: 90%;}
     height: 25px;
     border: solid 1px #ddd;
     border-radius: 5px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* 운영시간 */
 .boxE {
@@ -153,13 +181,22 @@ section {width: 90%;}
 
 
 
+
+
+
+
+
+
+
+
+
+
 /* 오월드 업체소개 */
 .box1 {position: relative;}
 .box1-1 {display: flex;
     flex-wrap: wrap;
     width: 100%;
     }
-/* 백그라운드 배경 포지션 이게 맞나용.... 적용은되는데 의심스러워요/////////////////// */
 .box1 .box1-1 .imgbg {background-image: url(../img/oworld_background.png);
     background-repeat: no-repeat;
     transform: scale(1.1);
@@ -204,6 +241,20 @@ section {width: 90%;}
     font-size: 14px;
     color: #666;
     line-height: 40px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* 카드혜택 */
 .box1-2 {text-align: center;
@@ -281,6 +332,23 @@ section {width: 90%;}
 }
 .box1-2-2 button:hover {background-color: #5E00A8;}
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*  재미있고 즐거운 오월드 설정*/
 
 .box2 {background-image: url(../img/joy_background.png);
@@ -288,7 +356,8 @@ section {width: 90%;}
     background-size: cover;
     padding-top: 40px;
     padding-bottom: 30px;
-    position: relative;}
+    position: relative;
+    overflow: hidden;}
 
 
 
@@ -316,53 +385,94 @@ section {width: 90%;}
     }
 
 
-.box2-3 {width: 100%;
+.box2-3 {width: 5040px;
     height: 500px;
     padding: 40px 0;
+    background-color: yellow;
     overflow: hidden;
-    /* background-color: yellow; */
+    position: relative;
 }
-.box2-3 ul {display: flex;
+
+.box2-3>div {position: absolute;
+    width: 5040px;
+    height: 500px;
+    left: 0;
+    top: 0;
+    /* background-color: red; */
+    }
+
+
+.box2-3 .joy>ul {display: flex;
     flex-wrap: wrap;
     width:2520px;
+    position: absolute;
+    top: 50%;
+    margin-top: -250px;
+    /* background-color: #5E00A8; */
     }
-.box2-3 li {width: 300px;
+.box2-3 .joy ul:nth-child(1) {left: 0;
+    animation: ani1 30s linear infinite;}
+.box2-3 .joy ul:nth-child(2) {left: 100%;
+    animation: ani2 30s linear infinite;}
+
+@keyframes ani1 {
+        0% {left: 0;}
+        50% {left: -2480px;}
+        50.00001% {left: 2480px;}
+        100% {left: 0;}
+    }
+
+@keyframes ani2 {
+        0% {left: 2480px;}
+        50% {left: 0%;}
+        100% {left: -2480px;} 
+    }
+
+.box2-3:hover ul:nth-child(1) {animation-play-state: paused;}
+.box2-3:hover ul:nth-child(2) {animation-play-state: paused;}
+
+.box2-3  .joy li {width: 300px;
     height: 500px;
     margin-right: 10px;
     position: relative;
+    overflow: hidden;
     /* background-color: red; */
 }
-.box2-3 li a {width: 100%;
+.box2-3 .joy li a {width: 100%;
     transform: scale(1);
     transform-origin: center center;
     opacity: 1;
     transition: all 0.5s;}
 
-.box2-3 li img {width: 100%;
+.box2-3 .joy li img {width: 100%;
     height: 100%;
 }
-    
-.box2-3 li:hover {transform: scale(1.2);
-    z-index: 10;
-    }    
 
-.box2-3 li .text {background-color: rgba(0,0,0, 0.5);
+.box2-3 .joy li:hover {transform: scale(1.2);
+    z-index: 10;
+    }
+    
+.box2-3 .joy li:hover .text {left: 0;
+    bottom: 150px;}
+
+.box2-3 .joy li .text {background-color: rgba(0,0,0, 0.5);
     color: #fff;
     padding: 25px 15px;
     position: absolute;
     left: 0;
     bottom: 0;
     width: 100%;
+    height: 150px;
     box-sizing: border-box;
     line-height: 20px;
+    transition: all 0.5s;
     }
 
 
 
 
 
-
-.box2-3 li .text span {display: block;
+.box2-3 .joy li .text span {display: block;
     font-weight: bold;
     font-size: 18px;
     padding-bottom: 10px;}
@@ -381,6 +491,19 @@ section {width: 90%;}
     cursor: pointer;
     color: #5E00A8;
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* 오월드 가이드맵 */
@@ -451,39 +574,95 @@ section {width: 90%;}
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* 오시는길 */
 
 .box5 {width: 100%;
-    height: 80vh;
+    height: 100vh;
     position: relative;
+    overflow: hidden;
     }
 
 
 .box5-1 .title {padding-right: 20px;}
 
 
-.box5-2 {height: 100%;
+.box5-2 {height: 800px;
+    width: 100%;
+    background-color: burlywood;
     margin-top: 30px;}
 .box5-2 iframe {width: 100%;
     height: 100%;
-    border: none;}
+    border: none;
+    background-color: #655B97;}
 
 .box5-3 {
-    background-color: rgba(122, 107, 198, 0.7);
-    border-radius: 50px 0 0 50px;
     position: absolute;
     right: 0;
     top: 15%;
     width: 450px;
+    height: 100%;
+    /* background-color: #5E00A8; */
+    }
+    
+    
+
+.box5-3 .hover {width: 50px;
+    height: 50px;
+    background-color: rgba(122, 107, 198, 0.7);
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;}
+
+.box5-3 .hover p {font-weight: 900;
+    font-size: 30px;
+    color: #fff;}
+
+.box5-3 .txt {position: absolute;
+    width: 450px;
     height: 600px;
+    right: -100%;
+    top: 5%;
+    border-radius: 50px 0 0 50px;
+    background-color: rgba(122, 107, 198, 0.7);
+    /* opacity: 0; */
     }
-    
-    
-.box5-3 ul {position: absolute;
+
+.box5-3 .txt ul  {position: absolute;
     left: 10%;
-    top: 8%;
+    top: 8%;}
     
-    }
+
+
+
+
+/* box5-3 hover */
+/* .box5-3 .hover:hover {opacity: 0;} */
+
+
+
+
+
+
 .box5-3 li {display: flex;
     align-items: flex-start;
     padding-bottom: 25px;
@@ -515,6 +694,22 @@ section {width: 90%;}
 .box5-3 li .text span em {font-size: 18px;
     font-weight: bold;
     font-style: normal;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

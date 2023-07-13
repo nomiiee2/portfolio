@@ -17,28 +17,11 @@
     <script src="https://kit.fontawesome.com/85ac904405.js" crossorigin="anonymous"></script>
     <!-- jquery -->
     <script src="http://code.jquery.com/jquery-latest.js"></script>
-    <script>
-        $(document).ready(function(){
 
-            $(window).scroll(function(){
-
-                let sc = $(this).scrollTop()
-                $('.bg').css({'top':-sc})
-            })
-
-            $('.listTitle li').click(function(){
-
-// 변수만들기(순번찾기)
-let a =$(this).index()
-console.log(a)
-
-$('.listBox ul').hide()
-$('.listBox ul').eq(a).show()
-})
+    <!-- 외부스크립트 -->
+    <script src="js/javascript.js"></script>
 
 
-        })
-    </script>
 
 </head>
 <body>   
@@ -208,57 +191,213 @@ $('.listBox ul').eq(a).show()
             </ul>
         </div>
         <div class="box2-3">
-            <ul>
-                <li>
-                    <a href="#">
-                        <img src="img/joy-1.png" alt="">
-                        
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="img/joy-2.png" alt="">
-                        <div class="text">
-                            <p>
-                                <span>후룸라이드</span>
-                                시간 : 5분<br>
-                                기준 : 120cm이상 (보호자 동반탑승 시 110cm 이상)
-                            </p>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="img/joy-3.png" alt="">
-                        
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="img/joy-4.png" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="img/joy-5.png" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="img/joy-6.png" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="img/joy-7.png" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="img/joy-8.png" alt="">
-                    </a>
-                </li>
-            </ul>
+            <div class="joy">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="img/joy-1.png" alt="">
+                            <div class="text">
+                                <p>
+                                    <span>후룸라이드</span>
+                                    시간 : 5분<br>
+                                    기준 : 120cm이상 (보호자 동반탑승 시 110cm 이상)
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/joy-2.png" alt="">
+                            <div class="text">
+                                <p>
+                                    <span>후룸라이드</span>
+                                    시간 : 5분<br>
+                                    기준 : 120cm이상 (보호자 동반탑승 시 110cm 이상)
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/joy-3.png" alt="">
+                            <div class="text">
+                                <p>
+                                    <span>후룸라이드</span>
+                                    시간 : 5분<br>
+                                    기준 : 120cm이상 (보호자 동반탑승 시 110cm 이상)
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/joy-4.png" alt="">
+                            <div class="text">
+                                <p>
+                                    <span>후룸라이드</span>
+                                    시간 : 5분<br>
+                                    기준 : 120cm이상 (보호자 동반탑승 시 110cm 이상)
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/joy-5.png" alt="">
+                            <div class="text">
+                                <p>
+                                    <span>후룸라이드</span>
+                                    시간 : 5분<br>
+                                    기준 : 120cm이상 (보호자 동반탑승 시 110cm 이상)
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/joy-6.png" alt="">
+                            <div class="text">
+                                <p>
+                                    <span>후룸라이드</span>
+                                    시간 : 5분<br>
+                                    기준 : 120cm이상 (보호자 동반탑승 시 110cm 이상)
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/joy-7.png" alt="">
+                            <div class="text">
+                                <p>
+                                    <span>후룸라이드</span>
+                                    시간 : 5분<br>
+                                    기준 : 120cm이상 (보호자 동반탑승 시 110cm 이상)
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/joy-8.png" alt="">
+                            <div class="text">
+                                <p>
+                                    <span>후룸라이드</span>
+                                    시간 : 5분<br>
+                                    기준 : 120cm이상 (보호자 동반탑승 시 110cm 이상)
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="img/joy-1.png" alt="">
+                            <div class="text">
+                                <p>
+                                    <span>후룸라이드</span>
+                                    시간 : 5분<br>
+                                    기준 : 120cm이상 (보호자 동반탑승 시 110cm 이상)
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/joy-2.png" alt="">
+                            <div class="text">
+                                <p>
+                                    <span>후룸라이드</span>
+                                    시간 : 5분<br>
+                                    기준 : 120cm이상 (보호자 동반탑승 시 110cm 이상)
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/joy-3.png" alt="">
+                            <div class="text">
+                                <p>
+                                    <span>후룸라이드</span>
+                                    시간 : 5분<br>
+                                    기준 : 120cm이상 (보호자 동반탑승 시 110cm 이상)
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/joy-4.png" alt="">
+                            <div class="text">
+                                <p>
+                                    <span>후룸라이드</span>
+                                    시간 : 5분<br>
+                                    기준 : 120cm이상 (보호자 동반탑승 시 110cm 이상)
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/joy-5.png" alt="">
+                            <div class="text">
+                                <p>
+                                    <span>후룸라이드</span>
+                                    시간 : 5분<br>
+                                    기준 : 120cm이상 (보호자 동반탑승 시 110cm 이상)
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/joy-6.png" alt="">
+                            <div class="text">
+                                <p>
+                                    <span>후룸라이드</span>
+                                    시간 : 5분<br>
+                                    기준 : 120cm이상 (보호자 동반탑승 시 110cm 이상)
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/joy-7.png" alt="">
+                            <div class="text">
+                                <p>
+                                    <span>후룸라이드</span>
+                                    시간 : 5분<br>
+                                    기준 : 120cm이상 (보호자 동반탑승 시 110cm 이상)
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/joy-8.png" alt="">
+                            <div class="text">
+                                <p>
+                                    <span>후룸라이드</span>
+                                    시간 : 5분<br>
+                                    기준 : 120cm이상 (보호자 동반탑승 시 110cm 이상)
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flo">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            
+
         </div>
         <div class="joyarrow">
             <span><i class="fa fa-caret-left" aria-hidden="true"></i></span>
@@ -323,42 +462,42 @@ $('.listBox ul').eq(a).show()
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12863.906559081212!2d127.3969124!3d36.2886167!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35654e61dd45625d%3A0xd9e0f93060ed6a4e!2z64yA7KCE7Jik7JuU65Oc!5e0!3m2!1sko!2skr!4v1684459243548!5m2!1sko!2skr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <div class="box5-3">
-            <ul>
-                <li>
-                    <img src="img/car.png" alt="">
-                    <div class="text">
-                        자가용
-                        <span><em>안영IC</em>로 나오신 후 <em>우회전</em> 하셔서<br>
-                            이정표를 보고 오시면 됩니다.</span>
-                    </div>
-                </li>
-
-                <li>
-                    <img src="img/flag.png" alt="">
-                    <div class="text">
-                        주차 안내
-                        <span><em>상시주차장</em><br>
-                            호랑이1,2,3,4 / 튤립1,2,3 주차장<br>
-                            <br>
-                            <em>비상시 주차장</em><br>
-                            기린주차장, 튤립4(미로원)주차장</span>
-                    </div>
-                </li>
-                <li>
-                    <img src="img/bus.png" alt="">
-                    <div class="text">
-                        대중교통
-                        <span>115, 301, 311, 314, 315, 318번 버스</span>
-                    </div>
-                </li>
-            </ul>
+            <div class="hover">
+                <p>+</p>
+            </div>
+            <div class="txt">
+                <ul>
+                    <li>
+                        <img src="img/car.png" alt="">
+                        <div class="text">
+                            자가용
+                            <span><em>안영IC</em>로 나오신 후 <em>우회전</em> 하셔서<br>
+                                이정표를 보고 오시면 됩니다.</span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/flag.png" alt="">
+                        <div class="text">
+                            주차 안내
+                            <span><em>상시주차장</em><br>
+                                호랑이1,2,3,4 / 튤립1,2,3 주차장<br>
+                                <br>
+                                <em>비상시 주차장</em><br>
+                                기린주차장, 튤립4(미로원)주차장</span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/bus.png" alt="">
+                        <div class="text">
+                            대중교통
+                            <span>115, 301, 311, 314, 315, 318번 버스</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
     </article>
-    <!-- <article class="box6">
-        <div class="box6-1">방문후기</div>
-        <div class="box6-2">사진트레일러</div>
-        <div class="box6-3">상단상세내용</div>
-    </article> -->
+    
 
     </section>
     <footer>

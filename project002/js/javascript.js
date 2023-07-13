@@ -1,5 +1,15 @@
 $(document).ready(function(){
 
+    // 서치바
+
+    // 클릭하면 .search가 나타나라
+    $('.sear_icon').click(function(){
+        $('.search').css({'display':'block'})
+        $('.sear_icon').css({'display':'none'})
+    })
+    
+
+
 
 // 배너 슬라이드
 
@@ -87,43 +97,38 @@ $('.sec6 .btn li').click(function(){
 
 
 
-// rev 스크롤
-
+// 스크롤
+        // sec6보다 스크롤이 내려가면 con는 멈춤
         
 
     $(window).scroll(function(){
         let sc = $(this).scrollTop(),
-            con = $('.sec6 article').offset().top
-            console.log(sc)
+            con = $('.sec6 article').offset().top,
+            sec1 = $('.sec1').offset().top
+            // console.log(sc)
         
         if(sc>=con){
             $('.sec6 article .con').css({'top':sc-con})
         }
-        if(sc>=con+450){
-            $('.sec6 article .con').css({'top':450})
+        if(sc>=con+480){
+            $('.sec6 article .con').css({'top':480})
         }
 
-        
-        
+
+
+
+        // 스크롤이 section1보다  내려가면 .search 사라짐
+
+        if(sc>=sec1){
+            $('.search').css({'display':'none'})
+            $('.sear_icon').css({'display':'block'})
+        }
+        // if(sc>=sec1-136){
+        //     $('.sear_icon').css({'display':'block'})
+        // }
+
+    
     })
-    
-
-
-
-
-
-// 하단배너
-    // $(window).scroll(function(){
-    //     let sec7 = $('#warp section').eq(6).offset().top,
-    //         sc = $(this).scrollTop()
-    //     console.log(sc)
-
-    
-        
-
-
-
-    // })
 
 
 
@@ -132,7 +137,4 @@ $('.sec6 .btn li').click(function(){
 
 
 
-
-
-
-});
+}); // 끝
