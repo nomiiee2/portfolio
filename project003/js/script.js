@@ -52,7 +52,7 @@ $('.story').height((widAc*numAc)-980)
 
 
 
-$(window).scroll(function(){
+$('.main').scroll(function(){
     let scc = $(this).scrollTop()
         
     $('.st').css({'left':-scc})
