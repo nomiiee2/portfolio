@@ -23,7 +23,7 @@ $('.main').mousewheel(function(event,delta){
 
 
 
-$('article').mousewheel(function(event,delta){
+$('.pro').mousewheel(function(event,delta){
     // let sc = $(window).scrollTop()
     // console.log(sc)
 
@@ -34,11 +34,21 @@ $('article').mousewheel(function(event,delta){
         $('.nav').removeClass('on')
         }
         
-        
     })
 
 
-
+    $('.pub').mousewheel(function(event,delta){
+        // let sc = $(window).scrollTop()
+        // console.log(sc)
+    
+        if(delta>0){
+            $('.pro').css('top','0').stop().animate({'top':'100%'},800)
+            $('.des').css('left','0').stop().animate({'left':'-100%'},800)
+            $('.pub').css('left','0').stop().animate({'left':'100%'},800)
+            $('.nav').removeClass('on')
+            }
+            
+        })
 
 
 
